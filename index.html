@@ -4,17 +4,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="mobile.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     </head>
     <body>
         <nav>
-            <img class="logo" src="images/logo.png">
+            <img class="logo" src="images/logo.jpg">
             <div class="options" id="options">
-                <a href="#">Home</a>
-                <a href="#">Products</a>
-                <a href="#">AboutUs</a>
-                <a href="#">ContactUs</a>
+                <a href="#main">Home</a>
+                <a href="#products">Products</a>
+                <a href="#">MyCart</a>
+                <a href="#aboutus">AboutUs</a>
+                <a href="#footer">ContactUs</a>
+                <a href="#">More ↓</a>
                 <button class="login">Log-In</button>
                 <button class="signup">Sign-Up</button>
             </div>
@@ -24,19 +27,24 @@
             </span>
             <button class="ham" onclick="ham()" id="ham">≡</button>
         </nav>
-
-        <div class="main">
-            <h1>magic Spices</h1>
+        <div class="dropdown"></div>
+        <div class="main" id="main">
+            <h1>the magic Spice</h1>
             <p>The leaders of the culinary art since 1956</p>
         </div>
-        <div class="products">
+        <div class="products" id="products">
             <h1>Products</h1>
             <button class="scroll-button-left" onclick="scrollle(300)">➜</button>
             <div class="product-grid" id="product-grid">
-                <span class="product-card" style="background-image: url('images/dry_ginger.jpg');">
+                <span class="product-card" style="background-image: url('images/ginger.webp');">
                     <span class="product-img">
-                    <h2>dryed ginger</h2>
+                    <h2>dried ginger</h2>
                     <p>100g | 200g</p>
+                    <div>Dry ginger powder is an effective cure for indigestion, sore throat, 
+                        cold, and cough. It’s also used to treat nausea and has anti-inflammatory 
+                        effects. In Indian cuisine, dry ginger powder is used in marinades for 
+                        Tandoori starters, and is a key ingredient in many spice mixes like garam 
+                        masala.</div>
                     <b>Rs.299 | Rs.600</b>
                     <span style="display: flex;flex-direction: row;margin-top: 18px;">
                         <button class="buy-now">Buy Now</button>
@@ -48,6 +56,11 @@
                     <span class="product-img">
                         <h2>cinnamon</h2>
                         <p>100g | 200g</p>
+                        <div>Cinnamon is known for its antioxidant and anti-inflammatory 
+                            properties. It may help reduce the risk of heart disease, lower 
+                            blood sugar levels, and has beneficial effects on neurodegenerative 
+                            diseases.Cinnamon is commonly used in curries and 
+                            biryanis, and is a key ingredient in garam masala.</div>
                         <b>Rs.299 | Rs.600</b>
                         <span style="display: flex;flex-direction: row;margin-top: 18px;">
                             <button class="buy-now">Buy Now</button>
@@ -59,6 +72,11 @@
                     <span class="product-img">
                         <h2>Clove</h2>
                         <p>100g | 200g</p>
+                        <div>Cloves are known for their antimicrobial, anti-inflammatory, 
+                            and antioxidant properties. They can help reduce inflammation, 
+                            improve oral health, and may even have anticancer properties. 
+                            In Indian cuisine, cloves are used in many dishes, including curries, 
+                            biryanis, and garam masala.</div>
                         <b>Rs.299 | Rs.600</b>
                         <span style="display: flex;flex-direction: row;margin-top: 18px;">
                             <button class="buy-now">Buy Now</button>
@@ -71,6 +89,10 @@
                     <span class="product-img">
                     <h2>nutmeg</h2>
                     <p>100g | 200g</p>
+                    <div>Nutmeg is rich in antioxidants and anti-inflammatory compounds. 
+                        It may help reduce inflammation, improve mood, aid in digestion, 
+                        and improve brain health. In Indian cuisine, nutmeg is used in 
+                        both savory and sweet dishes like stews, rice, bread, and pastries.</div>
                     <b>Rs.299 | Rs.600</b>
                     <span style="display: flex;flex-direction: row;margin-top: 18px;">
                         <button class="buy-now">Buy Now</button>
@@ -83,6 +105,13 @@
                     <span class="product-img">
                     <h2>black pepper</h2>
                     <p>100g | 200g</p>
+                    <div>Pepper, particularly black pepper, is one of the most commonly 
+                        used spices worldwide. It contains a compound called piperine, 
+                        which has potent antioxidant and anti-inflammatory properties. 
+                        It can help reduce inflammation, support blood sugar control, and 
+                        promote brain health¹². In Indian cuisine, pepper is used to add 
+                        flavor and heat to a variety of dishes, including curries, stews, 
+                        and soups</div>
                     <b>Rs.299 | Rs.600</b>
                     <span style="display: flex;flex-direction: row;margin-top: 18px;">
                         <button class="buy-now">Buy Now</button>
@@ -90,12 +119,45 @@
                     </span>
                     </span>
                 </span>
-
+                <span class="product-card" style="background-image: url('images/turmeric.jpg');">
+                    <span class="product-img">
+                    <h2>turmeric</h2>
+                    <p>100g | 200g</p>
+                    <div>Turmeric contains curcumin, a substance with potent anti-inflammatory 
+                        and antioxidant properties. It may help lower the risk of heart disease,
+                         cancer, and Alzheimer’s. It also has benefits against depression .In 
+                         Indian cuisine, turmeric is used in almost every dish for its color 
+                         and health benefits. It’s a key ingredient in dishes like curries, 
+                         dals, and biryanis.
+                    </div>
+                    <b>Rs.299 | Rs.600</b>
+                    <span style="display: flex;flex-direction: row;margin-top: 18px;">
+                        <button class="buy-now">Buy Now</button>
+                        <button class="cart">Add to Cart</button>
+                    </span>
+                    </span>
+                </span>
+                <span class="product-card" style="background-image: url('images/tamarind.jpg');">
+                    <span class="product-img">
+                    <h2>malabar tamarind</h2>
+                    <p>100g | 200g</p>
+                    <div>Also known as Garcinia Cambogia, it’s known for its potential 
+                        weight loss properties due to the presence of hydroxycitric acid 
+                        (HCA). It may also help reduce inflammation, control blood sugar, 
+                        and improve cardiovascular health . In Indian cuisine, particularly 
+                        in Kerala, Malabar Tamarind is used to add a sour taste to fish curries.</div>
+                    <b>Rs.299 | Rs.600</b>
+                    <span style="display: flex;flex-direction: row;margin-top: 18px;">
+                        <button class="buy-now">Buy Now</button>
+                        <button class="cart">Add to Cart</button>
+                    </span>
+                    </span>
+                </span>
                 
             </div>
             <button class="scroll-button-right" onclick="scrollri(300)">➜</button>
         </div>
-        <div class="aboutus">
+        <div class="aboutus" id="aboutus">
             <h1>AboutUs</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                 tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, 
@@ -105,7 +167,22 @@
                 culpa qui officia deserunt mollit anim id est laborum.</p>
                 <button class="contact">Contact Us</button>
         </div>
-        <footer></footer>
+        <footer id="footer">
+            <img src="images/logo.jpg" alt="">
+            <div class="address">
+                <p><i class="fa fa-user-o"></i><strong>Address</strong> <br><br>Thomas & Thomas Enterprise<br>
+Perumba <br>payyanur <br>Kannur <br>Kerala,670307<br><br>
+GSTIN-32AAIFT4707F1ZE</p>
+            </div>
+            <div class="social">
+                <p><i class="fa fa-comments-o"></i><strong>Socials</strong>
+                    <br><br>
+                    <i class="fa fa-envelope-o"></i> richtechtips@gmail.com<br>
+                    <i class="fa fa-whatsapp"></i> 1234567890<br>
+                    <i class="fa fa-phone"></i> 0123456789
+                </p>
+            </div>
+         </footer>
         <script src="main.js"></script>
     </body>
 </html>
