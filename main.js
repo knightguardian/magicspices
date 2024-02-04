@@ -7,13 +7,24 @@ function scrollri(l){
     console.log("done")
 }
 function ham(){
- let open;
-    if(open){
-        document.getElementById("options").style.transform="translateX(-70vw)";
-        open=0;
+ let open=document.getElementById("options").style;
+    if(open.opacity=="1"){
+        open.transform="translateX(-70vw)";
+        open.opacity="0";
     }
     else{
-        document.getElementById("options").style.transform="translateX(0vw)";
-        open=1;
+        open.transform="translateX(0vw)";
+        open.opacity="1";
+    }
+}
+function clickon(){
+    if(window.screen.width<=700){
+    let open=document.getElementById("options").style;
+
+    open.transform="translateX(-70vw)";
+    open.opacity="0";
+    }
+    else{
+        return;
     }
 }
