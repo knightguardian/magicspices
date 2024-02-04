@@ -1,0 +1,80 @@
+@media screen and (max-width:700px) {
+    .user-creation{
+        display: none;
+    }
+    nav{
+        height: 55px;
+        padding: 0px 30px;
+        margin-top: -55px;
+    }
+    .logo{
+        height: 55px;
+    }
+    .ham{
+        display: block;
+        margin: auto;
+        margin-right: 0;
+        background-color: transparent;
+        color: black;
+        outline: 0;
+        border: 0;
+        font-size: 50px;
+        z-index: 999;
+
+    }
+    .options{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        height: 100vh;
+        width: 70vw;
+        position: absolute;
+        left: 0;
+        transform: translateX(-70vw);
+        transition: 0.5s;
+        z-index: 500;
+    }
+    .options > .signup{
+        display: block;
+    }
+    .options > .login{
+        display: block;
+    }
+    .main{
+        background-position: center;
+        margin-top: 55px;
+        height: calc(100svh-55px);
+    }
+    .main > h1{
+        font-size: 40px;
+        padding-top: calc(50vh - 120px);
+    }
+    p{
+        font-size: 17px;
+    }
+    .products{
+        padding: 0px 30px;
+    }
+    .products > h1{
+        margin: 55px 0px;
+        margin-bottom: 0px;
+        font-size: 35px;
+        width: 50px;
+    }
+    .scroll-button-left,.scroll-button-right{
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .aboutus{
+        padding: 30px 30px;
+        background-image: none;
+    }
+    .aboutus > h1{
+        font-size: 35px;
+        width: 50px;
+    }
+    .aboutus > p{
+        font-size: 18px;
+    }
+}
