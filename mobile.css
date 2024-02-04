@@ -78,4 +78,16 @@
     .aboutus > p{
         font-size: 18px;
     }
+    footer{
+        flex-direction: column;
+        height: 100%;
+        padding: 40px;
+        gap: 25px;
+    }
+    .address{
+        margin-left: 0;
+    }
+    .social{
+        margin-left: 0;
+    }
 }
