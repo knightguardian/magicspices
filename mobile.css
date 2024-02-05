@@ -78,6 +78,10 @@
     }
     .aboutus > p{
         font-size: 18px;
+        width: 100%;
+    }
+    .more{
+        font-size: 15px;
     }
     footer{
         flex-direction: column;

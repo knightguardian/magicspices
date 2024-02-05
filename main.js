@@ -28,3 +28,16 @@ function clickon(){
         return;
     }
 }
+function more(){
+    let p= document.getElementById('more').style;
+    let b= document.getElementById('morebut')
+
+    if(p.display=="-webkit-box"){
+        p.display="block";
+        b.innerHTML="Less"
+    }
+    else{
+        p.display="-webkit-box"
+        b.innerHTML="More"
+    }
+}
