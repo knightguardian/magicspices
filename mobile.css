@@ -34,6 +34,25 @@
         opacity: 0;
         transition: 0.5s;
         z-index: 500;
+    }.login:hover{
+        background-color: var(--primary);
+        border: 0;
+        color: white;
+    }
+    .signup:hover{
+        background-color: white;
+        color: var(--primary);
+        border: 3px solid var(--primary);
+    }
+    .login:active{
+        background-color: white;
+        color: var(--primary);
+        border: 3px solid var(--primary);
+    }
+    .signup:active{
+        background-color: var(--primary);
+        border: 0;
+        color: white;
     }
     .options > .signup{
         display: block;
@@ -79,9 +98,10 @@
     .aboutus > p{
         font-size: 18px;
         width: 100%;
+        -webkit-line-clamp: 30;
     }
     .more{
-        font-size: 15px;
+        font-size: 18px;
     }
     footer{
         flex-direction: column;

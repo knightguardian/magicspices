@@ -1,10 +1,8 @@
 function scrollle(l){
     document.getElementById("product-grid").scrollLeft+=l;
-    console.log("done")
 }
 function scrollri(l){
     document.getElementById("product-grid").scrollLeft-=l;
-    console.log("done")
 }
 function ham(){
  let open=document.getElementById("options").style;
@@ -34,10 +32,10 @@ function more(){
 
     if(p.display=="-webkit-box"){
         p.display="block";
-        b.innerHTML="Less"
+        b.innerHTML="view less..."
     }
     else{
         p.display="-webkit-box"
-        b.innerHTML="More"
+        b.innerHTML="view more..."
     }
 }
