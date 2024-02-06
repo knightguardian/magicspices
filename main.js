@@ -27,15 +27,15 @@ function clickon(){
     }
 }
 function more(){
-    let p= document.getElementById('more').style;
+    let p= document.getElementById('hide').style;
     let b= document.getElementById('morebut')
 
-    if(p.display=="-webkit-box"){
+    if(p.display=="none"){
         p.display="block";
         b.innerHTML="view less..."
     }
     else{
-        p.display="-webkit-box"
+        p.display="none"
         b.innerHTML="view more..."
     }
 }

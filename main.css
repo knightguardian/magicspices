@@ -166,7 +166,8 @@ p{
    transition: 0.5s;
 }
 .scroll-button-left:hover,.scroll-button-right:hover{
-    background-color: rgb(231, 231, 231);
+    background-color: var(--primary);
+    color: white;
 }
 .scroll-button-left{
     float: right;
@@ -288,9 +289,6 @@ p{
 }
 .aboutus > p{
     width: 85%;
-    -webkit-line-clamp: 7;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
 }
 .aboutus > h1{
     padding:40px 0px;

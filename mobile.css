@@ -12,7 +12,7 @@
     }
     .ham{
         display: block;
-        margin: auto;
+        margin-left: auto;
         margin-right: 0;
         background-color: transparent;
         color: black;
@@ -20,6 +20,10 @@
         border: 0;
         font-size: 50px;
         z-index: 999;
+        padding: 0;
+        margin-top: -5px;
+        width: 40px;
+
 
     }
     .options{
@@ -87,9 +91,23 @@
         height: 40px;
         font-size: 15px;
     }
+    .scroll-button-left:hover,.scroll-button-right:hover{
+        background-color: white;
+        color: black;
+    }
+    .scroll-button-left:active,.scroll-button-right:active{
+        background-color: var(--primary);
+        color: white;
+    }
     .aboutus{
         padding: 30px 30px;
         background-image: none;
+    }
+    .contact:hover{
+        background-color: var(--primary);
+    }
+    .contact:active{
+        background-color: #113F4F;
     }
     .aboutus > h1{
         font-size: 35px;
